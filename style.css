@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    overflow: hidden;
+    position: relative;
+    height: 677px;
+    background-image: url(/Netflix-Clone/Assets/bg.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .layer {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    opacity: 0.65;
+}
+
+nav {
+    flex-wrap: nowrap;
+    display: flex;
+    height: 90px;
+    max-width: 76vw;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav span {
+    width: 145px;
+    z-index: 10;
+}
+
+.main nav .btns {
+    position: relative;
+    display: flex;
+    z-index: 10;
+    gap: 9px;
+}
+
+.main nav .btns button {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #e50914;
+    padding: 9px 16px;
+}
+
+.main nav .btns button:hover {
+    background-color: rgb(193, 17, 25);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.main nav .btns select {
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 2px 9px;
+}
+
+.main nav .btns select:hover {
+    scale: 110%;
+    transition: scale 0.2s ease-in-out;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2;
+    height: calc(100% - 109px);
+    margin: auto;
+    margin-top: 19px;
+    color: white;
+    position: relative;
+}
+
+.hero> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-size: 20px;
+}
+
+.hero> :nth-child(4) {
+    font-size: 20px;
+}
+
+.hero .f2 {
+    display: flex;
+    padding: 24px 8px;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 70%;
+}
+
+.hero .f2 input {
+    padding: 18px 215px 18px 21px;
+    border-radius: 4px;
+    border: 1px solid #626161;
+    background-color: rgba(0, 0, 0, 0.65);
+    margin-right: 10px;
+}
+
+.hero .f2 input::placeholder {
+    color: #b8b8b8;
+    text-align: left;
+}
+
+.hero .f2 button {
+    padding: 13px 28px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.hero .f2 button:hover {
+    background-color: rgb(193, 17, 25);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.divider {
+    height: 7px;
+    width: 100%;
+    position: relative;
+    z-index: 20;
+    background-color: rgb(46, 44, 44);
+}
+
+.first {
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    padding: 23px 10px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.first> :nth-child(1) {
+    padding: 2px 18px;
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+}
+
+.first h2 {
+    text-align: left;
+    line-height: 1.7;
+    font-size: 48px;
+}
+
+.first p {
+    text-align: left;
+    font-size: 24px;
+}
+
+.secImg {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+    width: 555px;
+    position: relative;
+
+}
+
+.secImg video {
+    overflow: hidden;
+    object-fit: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.second {
+    position: relative;
+}
+
+.second> :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    padding: 2px 25px;
+}
+
+
+.second> :nth-child(2) {
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2px 18px;
+}
+
+.secImg2 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 10;
+    position: relative;
+
+}
+
+.download {
+    position: absolute;
+    display: flex;
+    gap: 6px;
+    height: 97px;
+    flex-wrap: nowrap;
+
+    width: 58%;
+    background-color: #000000;
+    border: 2px solid #5a5a5a;
+    border-radius: 10px;
+    bottom: 4%;
+    left: 22%;
+}
+
+.download span img {
+    height: 91px;
+    padding: 3px 6px 3px 6px;
+    border-radius: 11px;
+}
+
+.download .gif {
+    height: 48px;
+
+}
+
+.download :nth-child(2) {
+    align-self: center;
+}
+
+.download :nth-child(3) {
+    align-self: center;
+}
+.fourth{
+    max-width: 80vw;
+    gap: 23px;
+}
+.faq{
+    margin:47px 10px;
+}
+.faq :first-child h1{
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+.faqbox{
+    font-size: 24px;
+    padding: 24px;
+    max-width: 70vw;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(45,45,45);
+    color: white;
+    align-items: center;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.hov :hover{
+    background-color: rgb(65,65,65);
+    transition: background-color 0.2s ease-in-out;
+}
+.footer{
+    height: 144px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+footer a,p{
+    color: rgba(255,255,255,0.7) ;
+    margin: 8px 0px;
+}
+footer{
+    margin: auto;
+    width: 70vw;
+    height: 244px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;     
+}
+footer .question{
+    margin:60px 0px 20px 0px;
+}
+.footer .footer-item select {
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.74);
+    max-width:50% ;
+    color: white;
+    background-color: #0f0f0f;
+    padding: 2px 9px;
+}
+
+.footer .footer-item select :hover {
+    scale: 110%;
+    transition: scale 0.2s ease-in-out;
+}
+
+@media screen and (max-width:441px) {
+    .download {
+        gap: 0px;
+        width: 76%;
+        left: 12%;
+    }
+
+
+}
+
+@media screen and (max-width:550px) {
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .first> :nth-child(1) {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .second> :nth-child(2) {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:930px) {
+    .first .secImg {
+        width: 305px;
+
+    }
+
+    .first h2 {
+        font-size: 32px;
+    }
+
+    .first p {
+        font-size: 19px;
+    }
+    .faq :first-child h1{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .first h2 {
+        text-align: center;
+    }
+
+    .first p {
+        text-align: center;
+    }
+
+}
+
+@media (max-width:750px) {
+    nav span {
+        width: 90px;
+        z-index: 10;
+    }
+
+    .main nav .btns button {
+        padding: 5px 2px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 1.5rem;
+        font-weight: 700;
+        max-width: 82%;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px; 
+    }
+
+    .hero .f2 input {
+        padding: 18px 65px 18px 21px;
+        border-radius: 4px;
+        border: 1px solid #626161;
+        background-color: rgba(0, 0, 0, 0.65);
+        margin-right: 10px;
+    }
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
